@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input,button{
+        padding: 10px;
+        height: 30px;
+    }
+    fieldset{
+        margin-bottom: 20px ;
+    }
+</style>
+<body>
+    <h2>Local storage Java-Script</h2>
+   <form action="">
+
+    <fieldset>
+        <legend>insert data</legend>
+        <input type="text" id="inputkey" placeholder="input the key ">
+        <input type="text" id="inputvalue" placeholder="input the value">
+        <button type="button" id="btn">Submit</button>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Local_Storage</legend>
+        <div id="output">
+
+        </div>
+
+    </fieldset>
+
+   </form>
+    
+
+
+<script>
+    const inputkey=document.getElementById("inputkey");
+    const inputvalue=document.getElementById("inputvalue");
+    const btn=document.getElementById("btn");
+    const output=document.getElementById("output");
+    btn.onclick=function()
+    {
+        const key=inputkey.value;
+        const value=inputvalue.value;
+        if(key && value)
+        {
+            localStorage.setItem(key,value)
+            location.reload();
+        }
+    }
+    for(i=0;i<localStorage.length;i++)
+    {
+        const k=localStorage.key(i);
+        const v=localStorage.getItem(k);
+        output.innerHTML+=`${k}:${v} <br>`
+    }
+
+</script>
+</body>     
+</html>

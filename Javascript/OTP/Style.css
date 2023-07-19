@@ -1,0 +1,22 @@
+*{
+    background-color: bisque;
+
+}
+
+
+#Box{
+    border: 2px solid black;
+    padding: 2%;
+    background-color: antiquewhite;
+    height: 300px;
+    width: 50%;   
+}
+button{
+    
+}
+h2{
+    border: 3px dotted black;
+    height: 25px;
+    text-align: center;
+    background-color: burlywood;
+}

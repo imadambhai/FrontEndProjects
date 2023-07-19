@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <div>
+        <ul id="ul">
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>Hibernet</li>
+            <li>Spring</li>
+        </ul>
+    </div>
+    <div>
+        
+    </div>
+
+    <script>
+        var ul=document.getElementById("ul");
+        var div=document.getElementsByTagName("div");
+        var cloneUL=ul.cloneNode(true);
+        div[1].appendChild(cloneUL);
+        var res=cloneUL.style.color="red"
+        console.log(res) 
+    </script>
+
+</body>
+</html>

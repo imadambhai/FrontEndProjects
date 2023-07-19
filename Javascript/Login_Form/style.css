@@ -1,0 +1,36 @@
+#box{
+    border: 0px solid ;
+    width: 30%;
+    background-color: white;
+}
+input{
+    border: none;
+    border: 1px solid;  
+    border-radius: 8px;
+    background-color: azure;
+}
+#first{
+    text-align: left;
+}
+#second{
+    padding-left: 5%;
+    text-align: center;
+}
+a{
+
+    text-decoration: none;
+    color: brown;
+}
+*{
+    background-color: bisque;  
+}   
+#btn{
+    text-align: center;
+    background-color: blue;
+    color: white;
+    
+    width: 180px;
+    border-radius: 25px;
+}
+    
+    

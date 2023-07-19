@@ -1,0 +1,25 @@
+
+#Calc{
+    font-size: small;
+    height: 200px;
+    width: 
+}
+
+div{
+    border: 2px solid black;
+    width: 100%;
+
+}
+#Head{
+        height: 60px;
+        background-color: antiquewhite;
+
+        
+}
+#Heading{
+    text-align: center;
+}
+#Operators{
+    width: 50%;
+    height: 200px;
+}

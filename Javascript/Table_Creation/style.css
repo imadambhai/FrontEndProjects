@@ -1,0 +1,23 @@
+*{
+  background-color: bisque;  
+}
+#myinput{
+    width: 100%;
+}
+#mytable{
+    width: 100%;
+    background-color: azure;
+    text-align: center;
+    border: 2px solid ;
+}
+.heading th{
+    width: 500px;
+    border: 2px solid;
+    background-color: royalblue;
+    text-align: center;
+}
+tr td{
+    width: 500px;
+    border: 2px solid;
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li>Java</li>
+        <li id="li1">React</li>
+        <li>Node</li>
+        <li id="li2">Angular</li>
+        <li id="li3">J2EE</li>
+    </ul>
+    <button onClick="change()">change</button>
+
+    <script>
+ function change()
+ {
+    var ul=document.getElementById("ul");
+    var li1=document.getElementById("li1");
+    var li2=document.getElementById("li2");
+    var li3=document.getElementById("li3");
+
+    var ele1=document.createElement("li");
+    var ele2=document.createElement("li");
+    var ele3=document.createElement("li");
+    var ele4=document.createElement("li");
+
+    ele1.textContent="Programming"
+    ele2.textContent="HTML"
+    ele3.textContent="Express Js"
+    ele4.textContent="CSS"
+
+    ele1.style.color="blue"
+    ele2.style.color="blue"
+    ele3.style.color="blue"
+    ele4.style.color="red"
+
+    ul.insertBefore(ele1,li1);
+    ul.insertBefore(ele2,li2);
+    ul.insertBefore(ele3,li3);
+    ul.appendChild(ele4)
+
+
+
+
+ }
+    </script>
+
+</body>
+</html>
