@@ -1,0 +1,32 @@
+—————————————————Hotstar.jsx—————————————————————                                                                                                                         import style from "./hotstar.module.css"
+const Hotstar=()=>{
+    return(
+        <div>
+       <section>
+        <article>
+            <div className={style.home }>
+           <i class="fa-solid fa-bars"></i>
+                </div>
+            <div className={style.logo}>
+            <img class="brand-logo" src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" alt="Disney+&nbsp;Hotstar"></img>
+            </div>
+            <div className={style.menu}>
+                <ol>
+                    <li>TV</li>
+                    <li>Movies</li>
+                    <li>Sports</li>
+                    <li>Disney+</li>
+                </ol>
+                
+            </div>
+            <div className={style.kids}>KiDS</div>
+            <div className={style.search}><div><input class="input-open" type="search" placeholder="Search" id="searchField" autocomplete="off" value="" ></input><i class="fa-solid fa-magnifying-glass"></i></div></div>
+            <div className={style.subs}><button  type="button">SUBSCRIBE</button></div>
+            <div className={style.account}><i class="fa-solid fa-user"></i></div>
+        </article>
+       </section>
+       <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/505/1420505-h-ccafcc282f6c" alt="Prince" class=""></img>
+           </div>       
+    )
+}
+export default Hotstar

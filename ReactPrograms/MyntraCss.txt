@@ -1,0 +1,87 @@
+————————————————myntra.module.css———————————-                                                                                                                                 *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 80px;
+    width: 100%;
+    /* background-color:lavenderblush;  */
+     box-shadow: 0px 0px 5px black; 
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+}
+section>article{
+    height: 80px;
+    width: 100%;
+    /* border: 2px solid wheat; */
+    display: flex;
+    align-items: center;
+}
+
+section>article>.menu{
+    height: 80px;
+    width: 40%;
+    color:black;
+   /* background-color:white; */
+}
+section>article>.menu>ol{
+    height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+   list-style: none;
+}
+section>article>.menu>ol>li{
+font-weight: bolder;
+ font-style:normal ;
+}
+section>article>.menu>ol>li>sup{
+color: red;
+margin-left: 5px;
+font-weight: bolder;
+}
+section>article>.search{
+height: 60px;
+width: 23%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+section>article>.search>div{
+    height: 30px;
+    width: 300px;
+    border: none;
+    color: black;
+    background-color: aliceblue;
+    margin-left: 20px;
+   
+}
+section>article>.search>div>i{
+    margin-left: 5px;
+    margin-top: 7px;
+}
+section>article>.search>div>input{
+    background-color: aliceblue;
+    border: none;
+    width: 250px;
+    margin-left: 10px;
+}
+section>article>.profile{
+    height: 80px;
+    width: 20%;
+    margin-left: 100px;
+    color: black;
+    /* background-color: white; */
+}
+section>article>.profile>ol{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    list-style: none;
+}
+section>article>.profile>ol>div>i{
+    margin-left: 10px;
+}

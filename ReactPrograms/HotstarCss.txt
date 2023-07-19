@@ -1,0 +1,144 @@
+———————————————-hotstar.module.css————————————————————-                                                                                              *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    /* border: 2px solid white; */
+    display: flex;
+    justify-content: center;
+}
+section>article{
+    height: 90px;
+    width: 95%;
+    /* background-color: bisque; */
+    display: flex;
+  
+}
+section>article>.home{
+    height: 90px;
+    width: 5%;
+    display: flex;
+    color: aliceblue;
+    /* background-color:red; */
+    align-items: center;
+    justify-content: center;
+    
+}
+section>article>.home>i{
+ margin-left: 20px;
+    width: 100%;
+    display: flex;
+    /* color: brown; */
+}
+section>article>.logo{
+    height: 90px;
+    width: 11%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
+}
+section>article>.logo>img{
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+}
+section>article>.menu{
+    height: 90px;
+    width: 20%;
+    color: black;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+}
+section>article>.menu>ol{
+width: 100%;
+justify-content: space-evenly;
+display: flex;
+list-style: none;
+font-weight: bolder;
+}
+section>article>.kids{
+    height: 90px;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    font-style:unset;
+    color:orange;
+    /* background-color: lightgray; */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:x-large;
+}
+section>article>.search{
+    height: 90px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    margin-left: 300px; color: aliceblue;
+    justify-content: center;
+    /* background-color: green; */
+}
+section>article>.search>div{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+
+}
+section>article>.search>div>input{
+    margin-left:0px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    /* background-color: black; */
+    justify-content: center;
+}
+section>article>.search>i{
+    width: 50%;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    justify-content: center;
+}
+section>article>.subs{
+    height: 90px;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+}
+section>article>.upgrade>button{
+    height: 30px;
+    width: 100%;
+    align-items: center;
+    background-color:lightgray;
+    color: green;
+    font-weight: bolder;
+    font-size: large;
+   
+}
+section>article>.account{
+    height: 90px;
+    width: 5%;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    /* background-color: violet; */
+}
+section>article>.account>i{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    height: auto;
+}
+div>img{
+
+    width: 100%;
+}

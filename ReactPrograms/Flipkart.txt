@@ -1,0 +1,86 @@
+import { useRef } from "react"
+import abc from "./flipkart.module.css"
+const Flipkart=()=>{
+    let demoRef=useRef()
+    let btn=()=>{
+        demoRef.current.style.display="block"
+    }
+    let btnn=()=>{
+        demoRef.current.style.display="none"
+    }
+    
+    return(
+        <div className={abc.main}>
+           <section>
+            <article>
+                <div className={abc.logo}>
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart Logo" />
+
+                    <div className={abc.exploreplus}>
+                        <a href="">
+                            <p className={abc.exp}>Explore</p>
+                            <p className={abc.plus}>Plus+</p>
+                        </a>
+                    </div>
+                    
+                </div>
+
+                <div className={abc.sear}>
+                    <div id={abc.txt}><input type="text" placeholder="Search for products,brands and more" /></div>
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+
+                </div>
+              
+                <div className={abc.dropdown}>
+                    <button>Login</button>
+                <div className={abc.dropdlogin}>
+                    <select name="" id="" value="login">Login
+                    
+                    <option value="login">My Profile</option>
+                    <option value="login">Flipkart Plus Zone</option>
+                    <option value="login">Login</option>
+
+                    </select>
+                   
+                </div>
+                </div>
+
+                <div className={abc.righ}>
+                    <div>
+                        <p>Become a Seller</p>
+                    </div>
+                    <div className={abc.dropdmore}>
+                    
+                           <button onMouseLeave={btnn} onMouseEnter={btn}>More</button>
+                            <div  ref={demoRef} className={abc.displaymore}>
+                                <section>
+                                    <p>Notificaton Preferences</p>
+                                    <p>24x7 Customer care</p>
+                                    <p>Advertize</p>
+                                    <p>Download App</p>
+                                </section>
+                            </div>
+                    
+                    </div>
+                    <div id={abc.cart}>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                        <p>Cart</p>
+                    </div>
+                </div>
+            </article>
+           </section>
+
+           <div className={abc.image}>
+            <img src="  https://assets.indiadesire.com/images/flipkart%20the%20big%20billion%20days%20sale%202023.jpg" alt="" />
+           </div>
+
+           
+          
+        </div>
+
+                
+
+    )
+
+}
+export default Flipkart

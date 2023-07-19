@@ -1,0 +1,52 @@
+——————————————Myntra.jsx—————————————————-                                                                                                                              import style from "./myntra.module.css"
+const Myntra =()=>{
+    return(
+        <div>
+        <section>
+            <article>
+                <div className={style.logo}>
+                <a href="https://www.freepnglogos.com/pics/logo-myntra" title="Image from freepnglogos.com"><img src="https://www.freepnglogos.com/uploads/logo-myntra-png/myntra-logo-m-png-3.png" width="180" alt="Myntra logo M png" /></a>
+                </div>
+                <div className={style.menu}>
+                <ol>
+                    <li>MEN</li>
+                    <li>WOMEN</li>
+                    <li>KIDS</li>
+                    <li>HOME & LIVING</li>
+                    <li>BEAUTY</li>
+                    <li>STUDIO<sup>NEW</sup></li>
+                </ol>
+                </div>
+                <div className={style.search}>
+                    <div>
+    
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                     <input type="text" placeholder="search for products,brands and more" />
+                    </div>
+                </div>
+                <div className={style.profile}>
+                    <ol>
+                        <div>
+                        <i class="fa-regular fa-user"></i>
+                        <li>Profile</li>
+                        </div>
+                        <div>
+                        <i class="fa-regular fa-heart"></i>
+                        <li>Wishlist</li>
+                        </div>
+                        <div>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <li>Bags</li>
+                        </div>
+                    </ol>
+                </div>
+            </article>
+        </section>
+        <img src="https://i.ytimg.com/vi/MQJn5LkyIn0/maxresdefault.jpg" alt="" /><img/>
+       <section>
+
+       </section>
+        </div>
+    )
+}
+export default Myntra

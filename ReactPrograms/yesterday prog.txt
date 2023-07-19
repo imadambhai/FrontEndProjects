@@ -1,0 +1,61 @@
+——————————-Main.jsx———————————-                                                                                                                                                                                                                                       import { useCallback, useState } from "react"
+import Count from "./Count"
+import Button from "./Button"
+
+const Main=()=>{
+    let [age,setAge] = useState(25)
+    let [salary,setSalary] = useState(25000)
+
+    let increAge=useCallback(()=>{
+        setAge(age+1)
+    },[age])
+
+    let increSalary=useCallback(()=>{
+        setSalary(salary+5000)
+    },[salary])
+    return(
+        <div>
+            <Count data={age}>Age</Count>
+            <Button Func={increAge}>IncreAge</Button>
+            <Count data={salary}>Salary</Count>
+            <Button Func={increSalary}>IncreSalary</Button>
+        </div>
+    )
+}
+export default Main
+
+
+————————-Count.jsx——————————                                                                                                                                                                                                                                                      import React from "react";
+const Count=(x)=>{
+    console.log("rendering", x.children);
+    return(
+        <div>
+            {x.children}:{x.data}
+        </div>
+    )
+}
+export default React.memo(Count)
+
+
+—————————Button.jsx—————————                                                                                                                                                                                                                                                import React from "react"
+const Button=(z)=>{
+    console.log(z)
+    return(
+        <div>
+            <button onClick={z.Func}>{z.children}</button>
+        </div>
+    )
+}
+export default Button
+
+
+———————————-Button.jsx————————————                                                                                                                                                                                                                               import React from "react"
+const Button=(z)=>{
+    console.log("rendering",z.children)
+    return(
+        <div>
+            <button onClick={z.Func}>{z.children}</button>
+        </div>
+    )
+}
+export default React.memo(Button)
