@@ -1,0 +1,84 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 72px;
+    width: 100%;
+    border-bottom: 1px solid gainsboro;
+    justify-content: center;
+    display: flex;
+}
+#navbar>article{
+    width: 95%;
+    height: 72px;
+    display: flex;
+    
+}
+#navbar>article>.Logo{
+    width: 30%;
+    align-items: center;
+    display: flex;
+}
+#LogoBlock{
+    display: flex;
+    justify-content: center;
+
+}
+#LogoBlock>p{
+    color: rgb(45,136,226);     
+    margin-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+#MenuBlock{
+    display: flex;
+    justify-content: center;
+    width: 140%;
+    height: 100%;
+
+}
+#MenuBlock>ol{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#MenuBlock>ol>li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+   
+}
+#MenuBlock>ol>li>a{
+    text-decoration: none;
+    color: gray;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 530;
+}
+#ButtonBlock{
+    width: 650%;
+    height: 100%;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+#ButtonBlock>button{
+    margin-left: 20px;
+    height: 45%;
+    width: 15.5%;
+    background-color: rgb(23,124,226);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+#navbar>img{
+    height: 100%;
+    background-color: antiquewhite;
+}
